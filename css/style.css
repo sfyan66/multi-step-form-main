@@ -34,7 +34,7 @@ body {
 .form {
     height: 600px;
     max-width: 950px;
-    margin: auto;
+    margin: 20px auto;
     padding: 25px;
     display: flex;
     background-color: var(--White);
@@ -84,7 +84,64 @@ body {
     color: black;
     background-color: var(--Blue_200);
 }
+.container {
+    width: 450px;
+    margin: 0 auto;
+    display: grid;
+}
 .step {
     flex: 1;
-    margin: 45px 15%;
+    margin: 45px 0;
+}
+.step h1 {
+    font-family: "bold";
+    color: var(--Blue_950);
+}
+.step p {
+    color: var(--Grey_500);
+    font-family: "reg";
+    margin: 16px 0 48px;
+}
+#step1 input {
+    all: unset;
+    border-radius: 7px;
+    height: 45px;
+    margin-bottom: 25px;
+    border: 1px solid var(--Grey_500);
+    color: var(--Blue_950);
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: "bold";
+}
+#step1 input:hover {
+    cursor: pointer;
+    border: 1px solid var(--Purple_600);
+}
+#step1 input:focus-visible {
+    border: 1.5px solid var(--Purple_600)!important ;
+}
+#step1 input::placeholder {
+    font-size: 16px;
+    color: var(--Grey_500);
+}
+#step1 h2 {
+    font-family: "reg";
+    color: var(--Blue_950);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#step1 button {
+    all: unset;
+    cursor: pointer;
+    background-color: var(--Blue_950);
+    color: var(--Blue_100);
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 75px;
+    text-align: center;
+    height: 25px;
+    font-family: "med";
+    font-size: 15px;
+    margin-left: auto;
+    margin-top: 60px
 }
