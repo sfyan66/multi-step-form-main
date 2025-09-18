@@ -1,0 +1,90 @@
+:root {
+    --Blue_950: hsl(213, 96%, 18%);
+    --Purple_600: hsl(243, 100%, 62%);
+    --Blue_300: hsl(228, 100%, 84%);
+    --Blue_200: hsl(206, 94%, 87%);
+    --Red_500: hsl(354, 84%, 57%);
+    --Grey_500: hsl(231, 11%, 63%);
+    --Purple_200: hsl(229, 24%, 87%);
+    --Blue_100: hsl(218, 100%, 97%);
+    --Blue_50: hsl(231, 100%, 99%);
+    --White: hsl(0, 100%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: auto;
+    background-color: var(--Blue_100);
+    height: 100vh;
+}
+@font-face {
+    font-family: "bold";
+    src: url("../assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "med";
+    src: url("../assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "reg";
+    src: url("../assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+.form {
+    height: 600px;
+    max-width: 950px;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    background-color: var(--White);
+    border-radius: 6px;
+}
+.sidebar {
+    background-image: url(../assets/images/bg-sidebar-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 210px;
+    color: var(--White);
+    padding: 50px 30px;
+    border-radius: 6px;
+}
+.sidebar .ste {
+    margin-bottom: 30px;
+    position: relative;
+    width: 165px;
+    height: 40px;
+}
+.sidebar p {
+    position: absolute;
+    left: 48px;
+    top: 13px;
+    font-family: "med";
+}
+.sidebar p span {
+    color: var(--Grey_500);
+    position: absolute;
+    margin-top: -15px;
+    font-size: 14px
+}
+.sidebar .circ {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "bold", sans-serif;
+}
+.sidebar .active {
+    color: black;
+    background-color: var(--Blue_200);
+}
+.step {
+    flex: 1;
+    margin: 45px 15%;
+}
